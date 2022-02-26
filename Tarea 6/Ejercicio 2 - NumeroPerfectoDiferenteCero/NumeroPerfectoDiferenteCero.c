@@ -5,7 +5,7 @@ int num=1;
 int main ()
 {
     do{
-        printf("Introduzca el numero que desea verificar si es perfecto: ");
+        printf("Introduzca el numero que desea validar si es perfecto: ");
         scanf("%d", &num);
         int res;
         res=perfecto(num);
@@ -21,9 +21,9 @@ int main ()
 
 int perfecto(num)
 {
-    int i, res, sum=0, parada;
+    int i, res, sum=0, tope;
     ;
-    for(i=1, parada=num/2+1; i<parada; i++)
+    for(i=1, tope=num/2+1; i<tope; i++)
     {
 	    if(num%i==0)
 	    {
